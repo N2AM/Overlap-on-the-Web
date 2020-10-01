@@ -1,5 +1,4 @@
 html {
-  font-family: "Pacifico", cursive;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +16,7 @@ img {
   display: block;
   width: 100%;
 }
+
 .overlapping ul {
   list-style: none;
   display: grid;
@@ -39,4 +39,27 @@ img {
 .overlapping ul li:nth-child(3) {
   grid-column: 2 / 5;
   grid-row: 2 / 6;
+}
+
+.grid-container {
+  display: grid;
+}
+.grid-container img {
+  grid-column: 1 / 4;
+  grid-row: 1 / 5;
+}
+.grid-container h2 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.grid-container h2 span {
+  display: inline;
+  padding: 0.5rem 0.25rem 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background: #ffed00;
 }
